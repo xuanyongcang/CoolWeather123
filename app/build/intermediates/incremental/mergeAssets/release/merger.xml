@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="22.2.1"><source path="D:\Users\Administrator\Desktop\CoolWeather\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\assets"/></dataSet><dataSet config="main"><source path="D:\Users\Administrator\Desktop\CoolWeather\app\src\main\assets"/></dataSet><dataSet config="release"><source path="D:\Users\Administrator\Desktop\CoolWeather\app\src\release\assets"/></dataSet></merger>

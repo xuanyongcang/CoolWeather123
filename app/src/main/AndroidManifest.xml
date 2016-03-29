@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.coolweather.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/yingyong"
+        android:label="FarmTEST"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.coolweather.app.activity.LoginActivity"
+            android:label="FarmTEST" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coolweather.app.activity.WeatherActivity"></activity>
+        <activity android:name=".activity.LogoActivity" />
+        <activity android:name=".activity.ChooseAreaActivity" />
+        <activity android:name=".activity.FarmLogActivity" />
+        <activity android:name=".activity.SelectPicActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <service android:name="com.coolweather.app.service.AutoUpdateService"></service>
+        <receiver android:name="com.coolweather.app.receiver.AutoUpdateReceiver"></receiver>
+    </application>
+
+</manifest>
